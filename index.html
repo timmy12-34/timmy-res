@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TD chatbot  </title>
+    <link rel="icon" type="images\jpg" href="td.jpg" >
+    <link rel="stylesheet" href="style.css">
+    <!--linking google fonts and font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=keyboard_arrow_down" />
+</head>
+
+<body>
+    <div class="chatbot-popup">
+        <!--chatbot-header-->
+        <div class="chat-header">
+            <div class="header-info">
+
+
+                <svg class="chatbot-logo" xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960"
+                    width="48px" fill="#1f1f1f">
+                    <path
+                        d="M147-376q-45 0-76-31.21T40-483q0-44.58 31.21-75.79Q102.42-590 147-590v-123q0-24 18-42t42-18h166q0-45 31.21-76T480-880q44.58 0 75.79 31.21Q587-817.58 587-773h166q24 0 42 18t18 42v123q45 0 76 31.21T920-483q0 44.58-31.21 75.79Q857.58-376 813-376v196q0 24-18 42t-42 18H207q-24 0-42-18t-18-42v-196Zm196.24-100q16.76 0 28.26-11.74 11.5-11.73 11.5-28.5 0-16.76-11.74-28.26-11.73-11.5-28.5-11.5-16.76 0-28.26 11.74-11.5 11.73-11.5 28.5 0 16.76 11.74 28.26 11.73 11.5 28.5 11.5Zm274 0q16.76 0 28.26-11.74 11.5-11.73 11.5-28.5 0-16.76-11.74-28.26-11.73-11.5-28.5-11.5-16.76 0-28.26 11.74-11.5 11.73-11.5 28.5 0 16.76 11.74 28.26 11.73 11.5 28.5 11.5ZM312-285h336v-60H312v60ZM207-180h546v-533H207v533Zm273-267Z" />
+                </svg>
+                <h2 class="logo-text">TD chatbot</h2>
+
+            </div>
+            <button id="close-chatbot" class="material-symbols-outlined">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#1f1f1f">
+                    <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                </svg>
+            </button>
+
+        </div>
+        <!--chatbot-body-->
+        <div class="chat-body">
+            <div class="message bot-message thinking">
+
+                <svg class="bot-avatar" xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960"
+                    width="48px" fill="#1f1f1f">
+                    <path
+                        d="M147-376q-45 0-76-31.21T40-483q0-44.58 31.21-75.79Q102.42-590 147-590v-123q0-24 18-42t42-18h166q0-45 31.21-76T480-880q44.58 0 75.79 31.21Q587-817.58 587-773h166q24 0 42 18t18 42v123q45 0 76 31.21T920-483q0 44.58-31.21 75.79Q857.58-376 813-376v196q0 24-18 42t-42 18H207q-24 0-42-18t-18-42v-196Zm196.24-100q16.76 0 28.26-11.74 11.5-11.73 11.5-28.5 0-16.76-11.74-28.26-11.73-11.5-28.5-11.5-16.76 0-28.26 11.74-11.5 11.73-11.5 28.5 0 16.76 11.74 28.26 11.73 11.5 28.5 11.5Zm274 0q16.76 0 28.26-11.74 11.5-11.73 11.5-28.5 0-16.76-11.74-28.26-11.73-11.5-28.5-11.5-16.76 0-28.26 11.74-11.5 11.73-11.5 28.5 0 16.76 11.74 28.26 11.73 11.5 28.5 11.5ZM312-285h336v-60H312v60ZM207-180h546v-533H207v533Zm273-267Z" />
+                </svg>
+                <h2>hey there <br>how can i help you?</h2>
+                <div class="message user-message">
+
+          
+        </div>
+
+
+
+        <!--chatbot-footer-->
+        <div class="footer">
+            <form action="#" class="chat-form">
+                <textarea name="" placeholder="message..." class="message-input" required></textarea>
+                <div class="chat-controls">
+                    <button type="button" class="material-symbols-outlined">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#1f1f1f">
+                            <path
+                                d="M620-520q25 0 42.5-17.5T680-580q0-25-17.5-42.5T620-640q-25 0-42.5 17.5T560-580q0 25 17.5 42.5T620-520Zm-280 0q25 0 42.5-17.5T400-580q0-25-17.5-42.5T340-640q-25 0-42.5 17.5T280-580q0 25 17.5 42.5T340-520Zm140 260q68 0 123.5-38.5T684-400h-66q-22 37-58.5 58.5T480-320q-43 0-79.5-21.5T342-400h-66q25 63 80.5 101.5T480-260Zm0 180q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Z" />
+                        </svg>
+                    </button>
+                    <div class="file upload wrapper"> 
+                        <input type="file" accept="images\*" id="file-input" hidden>
+                         <button type="button" id="file-upload" class="material-symbols-outlined">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#1f1f1f">
+                            <path
+                                d="M720-330q0 104-73 177T470-80q-104 0-177-73t-73-177v-370q0-75 52.5-127.5T400-880q75 0 127.5 52.5T580-700v350q0 46-32 78t-78 32q-46 0-78-32t-32-78v-370h80v370q0 13 8.5 21.5T470-320q13 0 21.5-8.5T500-350v-350q-1-42-29.5-71T400-800q-42 0-71 29t-29 71v370q-1 71 49 120.5T470-160q70 0 119-49.5T640-330v-390h80v390Z" />
+                        </svg>
+                    </button>
+                </div>
+                    <button type="submit" id="send-message" class="material-symbols-outlined">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#1f1f1f">
+                            <path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z" />
+                        </svg>
+                    </button>
+                </div>
+        </div>
+        </form>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
