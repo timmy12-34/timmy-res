@@ -17,7 +17,7 @@ body {
 
 .chatbot-popup {
     position: relative;
-    margin: 100px;
+    margin: 10px;
     width: 400px;
     background: white;
     overflow: hidden;
